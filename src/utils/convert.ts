@@ -49,6 +49,11 @@ export default async function convert(
   action: Action,
 ): Promise<{ url: string; output: string }> {
   const { file, to, file_name, file_type } = action
+
+  if (!file_name || !to) {
+    throw new Error('Invalid file name or conversion format.')
+  }
+
   const input = getFileExtension(file_name)
   const output = `${removeFileExtension(file_name)}.${to}`
 
