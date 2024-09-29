@@ -81,14 +81,16 @@ export const ConversionActions: React.FC<ConversionActionsProps> = ({
   const download = (action: Action) => {
     const a = document.createElement('a')
     a.style.display = 'none'
-    a.href = action.url
-    a.download = action.output
+    if (action.url) {
+      a.href = action.url
+      a.download = action.output || 'downloaded-file'
 
-    document.body.appendChild(a)
-    a.click()
+      document.body.appendChild(a)
+      a.click()
 
-    URL.revokeObjectURL(action.url)
-    document.body.removeChild(a)
+      URL.revokeObjectURL(action.url)
+      document.body.removeChild(a)
+    }
   }
 
   return (
