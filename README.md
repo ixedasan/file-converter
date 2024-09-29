@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# File Converter
 
-## Getting Started
+A simple and efficient file converter that allows you to upload and convert various file types (video, audio, image) into different formats. Built with Next.js, it features an intuitive drag-and-drop interface, customizable themes, and fast processing for a smooth user experience.
 
-First, run the development server:
+[**Demo Link**](https://file-converter-teal.vercel.app/)
+
+[**PROJECT STRUCURE**](./structure.md)
+
+## Preview
+
+![preview](./public/preview.png)
+
+## Features
+
+- 🖼️ **Drag-and-Drop**: Easily upload your files using the drag-and-drop feature.
+- 🔄 **Multiple Formats**: Supports conversion between various video, audio, and image formats.
+- 🎨 **Theme Toggle**: Switch between light and dark themes with the built-in theme switcher.
+- ⚡ **Fast Conversion**: Quickly convert files using the power of `ffmpeg`.
+- 📂 **Download & Save**: Download the converted files with a single click.
+
+## Installation
+
+To clone and run this application, you'll need [Git](https://git-scm.com/) and [PNPM](https://pnpm.io/) installed on your computer. From your command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone this repository
+$ git clone https://github.com/ixedasan/file-converter
+
+# Navigate to the project directory
+$ cd file-converter
+
+# Install dependencies
+$ pnpm install
+
+# Start the development server
+$ pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please feel free to submit a Pull Request.
